@@ -5,15 +5,15 @@ Node n3;
 
 void setup(){
   liste = new LinkedList();
-  n1 = new Node();
-  n2 = new Node();
+  n1 = new Node(1);
+  n2 = new Node(2);
+  n3 = new Node(3);
   liste.first = n1;
   n1.next = n2;
   n2.next = n3;
-  
-  n1.value = 1;
-  n2.value = 4;
-  n3.value = 16;
+  liste.add(7);
+  liste.add(8);
+  liste.udskriv();
 }
 
 void draw(){
