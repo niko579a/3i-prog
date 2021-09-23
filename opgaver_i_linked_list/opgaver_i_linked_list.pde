@@ -11,8 +11,9 @@ void setup(){
   liste.first = n1;
   n1.next = n2;
   n2.next = n3;
-  liste.add(7);
-  liste.add(8);
+  liste.addFirst(9);
+  liste.addEnd(7);
+  liste.addEnd(8);
   liste.udskriv();
 }
 
