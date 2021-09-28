@@ -28,7 +28,7 @@ class LinkedList {
       Node n = first;
       while (slut == false) {
         if (n.next == null) {
-          first = K;
+          first.value = K.value;
           break;
         } else {
           n = n.next;
@@ -36,7 +36,7 @@ class LinkedList {
       }
     }
   }
-//printer dem forkert. 
+
   void udskriv() {
     boolean slut = false;
     Node n = first.next;
@@ -51,5 +51,4 @@ class LinkedList {
       }
       n = n.next;
     }
-  }
-} 
+  }}
