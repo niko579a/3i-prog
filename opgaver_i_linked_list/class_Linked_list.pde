@@ -24,16 +24,8 @@ class LinkedList {
     if (first == null) {
       first = K;
     } else {
-      boolean slut = false;
-      Node n = first;
-      while (slut == false) {
-        if (n.next == null) {
-          first.value = K.value;
-          break;
-        } else {
-          n = n.next;
-        }
-      }
+      K.next = first;
+      first = K;
     }
   }
 

@@ -1,7 +1,7 @@
 LinkedList liste;
-Node n1; 
+/*Node n1; 
 Node n2;
-Node n3;
+Node n3;*/
 
 void setup(){
   liste = new LinkedList();
@@ -12,9 +12,12 @@ void setup(){
   n1.next = n2;
   n2.next = n3;*/
   
+  liste.addEnd(1);
+  liste.addEnd(2);
+  liste.addEnd(3);
   liste.addEnd(4);
   liste.addEnd(5);
-  liste.addFirst(9);
+  liste.addFirst(0);
   
   liste.udskriv();
 }
