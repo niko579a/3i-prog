@@ -1,8 +1,12 @@
 class LinkedList {
   Node first;
+  int biggestValue = 0;
+  int smallestValue = 2147483647;
 
   void addEnd(int a) {
     Node K = new Node(a);
+    biggestNumber(a);
+    smallestNumber(a);
     if (first == null) {
       first = K;
     } else {
@@ -21,6 +25,8 @@ class LinkedList {
   
   void addFirst(int a) {
     Node K = new Node(a);
+    biggestNumber(a);
+    smallestNumber(a);
     if (first == null) {
       first = K;
     } else {
@@ -31,6 +37,8 @@ class LinkedList {
   
   void addK(int talInsat, int plads){
     Node n = first;
+    biggestNumber(talInsat);
+    smallestNumber(talInsat);
     int naaetPlads = 0; 
     while(n != null){
       if(naaetPlads == plads){
@@ -38,6 +46,18 @@ class LinkedList {
       }
       n = n.next;
       naaetPlads++;
+    }
+  }
+  
+  void biggestNumber(int value){
+    if(value > biggestValue){
+      biggestValue = value;
+    }
+  }
+  
+  void smallestNumber(int value){
+    if(value < smallestValue){
+      smallestValue = value;
     }
   }
 
