@@ -19,6 +19,8 @@ void setup(){
   liste.addEnd(5);
   liste.addFirst(0);
   
+  liste.addK(9,3);
+  
   liste.udskriv();
 }
 

@@ -28,6 +28,18 @@ class LinkedList {
       first = K;
     }
   }
+  
+  void addK(int talInsat, int plads){
+    Node n = first;
+    int naaetPlads = 0; 
+    while(n != null){
+      if(naaetPlads == plads){
+        n.value = talInsat;
+      }
+      n = n.next;
+      naaetPlads++;
+    }
+  }
 
   void udskriv() {
     boolean slut = false;
